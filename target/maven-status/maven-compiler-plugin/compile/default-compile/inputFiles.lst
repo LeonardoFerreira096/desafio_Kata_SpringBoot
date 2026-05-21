@@ -1,0 +1,9 @@
+/Users/primemac001/Documents/projects/desafio_Kata_SpringBoot/src/main/java/com/kata/produto/KataApplication.java
+/Users/primemac001/Documents/projects/desafio_Kata_SpringBoot/src/main/java/com/kata/produto/controller/ProdutoController.java
+/Users/primemac001/Documents/projects/desafio_Kata_SpringBoot/src/main/java/com/kata/produto/dto/ProdutoRequest.java
+/Users/primemac001/Documents/projects/desafio_Kata_SpringBoot/src/main/java/com/kata/produto/dto/ProdutoResponse.java
+/Users/primemac001/Documents/projects/desafio_Kata_SpringBoot/src/main/java/com/kata/produto/entity/Produto.java
+/Users/primemac001/Documents/projects/desafio_Kata_SpringBoot/src/main/java/com/kata/produto/exception/ProdutoNaoEncontradoException.java
+/Users/primemac001/Documents/projects/desafio_Kata_SpringBoot/src/main/java/com/kata/produto/repository/ProdutoRepository.java
+/Users/primemac001/Documents/projects/desafio_Kata_SpringBoot/src/main/java/com/kata/produto/service/ProdutoService.java
+/Users/primemac001/Documents/projects/desafio_Kata_SpringBoot/src/main/java/com/kata/produto/service/ProdutoServiceImpl.java
