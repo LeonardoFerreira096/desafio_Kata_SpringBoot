@@ -26,7 +26,7 @@ public class ProdutoController {
         this.produtoServiceImpl = produtoServiceImpl;
     }
 
-    //POST 
+   /* //POST to aqui
     @Operation(summary = "Criar produto", responses = {
 
             @ApiResponse(responseCode = "201", description = "Produto criado com sucesso"),
@@ -39,6 +39,7 @@ public class ProdutoController {
         return ResponseEntity.status(201).body(response);
 
     }
+     */
 
     /*
      * @Operation(summary = "Listar produtos", responses = {
