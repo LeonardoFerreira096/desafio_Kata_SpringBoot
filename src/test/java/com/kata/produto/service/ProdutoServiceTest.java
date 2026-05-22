@@ -35,7 +35,8 @@ class ProdutoServiceTest {
     @BeforeEach
     void setUp() {
         produto = new Produto(1L, "Notebook", new BigDecimal("3500.00"), "Notebook para trabalho", 10, "Eletrônicos");
-        request = new ProdutoRequest("Notebook", new BigDecimal("3500.00"), "Notebook para trabalho", 10, "Eletrônicos");
+        request = new ProdutoRequest("Notebook", new BigDecimal("3500.00"), "Notebook para trabalho", 10,
+                "Eletrônicos");
     }
 
     @Test
@@ -95,8 +96,10 @@ class ProdutoServiceTest {
 
     @Test
     void deveAtualizarProdutoExistente() {
-        ProdutoRequest novosDados = new ProdutoRequest("Notebook Pro", new BigDecimal("5000.00"), "Top de linha", 5, "Eletrônicos");
-        Produto atualizado = new Produto(1L, "Notebook Pro", new BigDecimal("5000.00"), "Top de linha", 5, "Eletrônicos");
+        ProdutoRequest novosDados = new ProdutoRequest("Notebook Pro", new BigDecimal("5000.00"), "Top de linha", 5,
+                "Eletrônicos");
+        Produto atualizado = new Produto(1L, "Notebook Pro", new BigDecimal("5000.00"), "Top de linha", 5,
+                "Eletrônicos");
         when(repository.findById(1L)).thenReturn(Optional.of(produto));
         when(repository.save(any(Produto.class))).thenReturn(atualizado);
 

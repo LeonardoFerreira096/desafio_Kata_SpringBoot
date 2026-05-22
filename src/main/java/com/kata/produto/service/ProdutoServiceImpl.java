@@ -69,11 +69,30 @@ public class ProdutoServiceImpl implements ProdutoService {
 
     @Override
     public ProdutoResponse atualizar(Long id, ProdutoRequest request) {
-        return null;
+        Produto produto = produtoRepository.findById(id)
+                .orElseThrow(() -> new ProdutoNaoEncontradoException(id));
+        produto.setNome(request.nome());
+        produto.setPreco(request.preco());
+        produto.setDescricao(request.descricao());
+        produto.setQuantidadeEstoque(request.quantidadeEstoque());
+        produto.setCategoria(request.categoria());
+
+        Produto salvo = produtoRepository.save(produto);
+
+        return new ProdutoResponse(
+                salvo.getId(),
+                salvo.getNome(),
+                salvo.getPreco(),
+                salvo.getDescricao(),
+                salvo.getQuantidadeEstoque(),
+                salvo.getCategoria());
     }
 
     @Override
     public void deletar(Long id) {
-    ///////prox a fazer
+        if (!produtoRepository.existsById(id)) {
+            throw new ProdutoNaoEncontradoException(id);
+        }
+        produtoRepository.deleteById(id);
     }
 }

@@ -103,3 +103,6 @@ mvn spring-boot:run
 ```
 
 - Swagger UI: http://localhost:8080/swagger-ui/index.html
+
+
+- artigo: https://alexsousadev.com/posts/do-zero-ao-endpoint-criando-um-crud-no-spring-boot-e-entendendo-cada-camada
